@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/jojo.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -34,25 +34,27 @@
 
 		<div class="reveal">
 			<div class="slides">
-				<section>SSD</section>
+				<section><h1>SSD</h1></section>
 
 				<section>
 					<h2>Kaj so SSD diski?</h2>
 					<section>
 						<h3>Osnovna definicija</h3>
 						<ul>
-							<li>SSD (Solid State Drive) je naprava za shranjevanje podatkov, ki uporablja flash pomnilnik.</li>
-							<li>SSD nima premikajočih delov, zato je hitrejši, tišji in bolj zanesljiv od HDD diskov.</li>
+							<li>SSD (Solid State Drive) je naprava za shranjevanje podatkov.</li>
+							<li>Uporablja flash pomnilnik, brez premikajočih delov.</li>
+							<li>Hitrejši, tišji in bolj zanesljiv kot HDD.</li>
 						</ul>
 					</section>
 					<section>
 						<h3>Prednosti v primerjavi s HDD</h3>
 						<ul>
-							<li><b>Hitrost:</b> SSD so večkrat hitrejši pri branju in pisanju podatkov.</li>
-							<li><b>Zanesljivost:</b> Ni gibljivih delov, kar pomeni manj možnosti za mehanske okvare.</li>
-							<li><b>Tiho delovanje:</b> SSD ne oddajajo zvoka, saj ne vsebujejo vrtečih diskov.</li>
-							<li><b>Manjša poraba energije:</b> Idealno za prenosnike, saj podaljšujejo trajanje baterije.</li>
+							<li>Veliko hitrejši pri branju in pisanju.</li>
+							<li>Manjša možnost okvare.</li>
+							<li>Tišje delovanje.</li>
+							<li>Manjša poraba energije.</li>
 						</ul>
+						<p>[img primerjava SSD vs HDD]</p>
 					</section>
 				</section>
 
@@ -61,47 +63,36 @@
 					<section>
 						<h3>Osnova delovanja</h3>
 						<ul>
-							<li>SSD uporablja flash pomnilnik za shranjevanje podatkov.</li>
-							<li>Podatki se zapisujejo v električne celice in ostanejo tudi brez napajanja.</li>
-							<li>SSD diski nimajo magnetnih plošč kot HDD, zato ni potrebe po mehanskem branju.</li>
+							<li>Podatki se shranijo v flash celice.</li>
+							<li>Brez magnetnih plošč, vse je elektronsko.</li>
+							<li>Zapis v celice = elektroni v plavajoči vratih (floating gate).</li>
 						</ul>
 					</section>
 					<section>
 						<h3>Vrste pomnilniških celic</h3>
 						<ul>
-							<li><b>SLC (Single-Level Cell):</b> 1 bit na celico, najhitrejši in najbolj vzdržljiv.</li>
-							<li><b>MLC (Multi-Level Cell):</b> 2 bita na celico, kompromis med hitrostjo in kapaciteto.</li>
-							<li><b>TLC (Triple-Level Cell):</b> 3 bita na celico, cenejši, a manj vzdržljiv.</li>
-							<li><b>QLC (Quad-Level Cell):</b> 4 bita na celico, največja kapaciteta, najkrajša življenjska doba.</li>
+							<li>SLC: 1 bit/celico (hitro, dolgo zdrži).</li>
+							<li>MLC: 2 bita/celico (srednja hitrost).</li>
+							<li>TLC: 3 bita/celico (poceni, krajša živ. doba).</li>
+							<li>QLC: 4 bita/celico (velika kapaciteta, najcenejši).</li>
 						</ul>
+						<p>[img flash celica struktura]</p>
 					</section>
-				</section>
-
-				<section>
-					<h2>Dostop do podatkov</h2>
 					<section>
-						<h3>SSD vs HDD</h3>
+						<h3>Shranjevanje in branje</h3>
 						<ul>
-							<li><b>SSD:</b> Naključni dostop do podatkov, kar pomeni, da so podatki dostopni takoj, ne glede na lokacijo.</li>
-							<li><b>HDD:</b> Sekvenčni dostop, ker morajo magnetne glave prebrati pravo mesto na disku.</li>
+							<li>Pisanje = polnjenje celice z elektroni.</li>
+							<li>Bralni napetostni test pokaže, kateri podatki so zapisani.</li>
 						</ul>
 					</section>
 					<section>
-						<h3>Zakaj je to pomembno?</h3>
+						<h3>Krmilnik SSD</h3>
 						<ul>
-							<li>SSD-ji so idealni za hitro nalaganje operacijskih sistemov in programov.</li>
-							<li>HDD-ji so počasnejši, saj morajo bralne glave mehansko premikati.</li>
-							<li>SSD so boljši za večopravilnost in hitre aplikacije, HDD so boljši za shranjevanje velikih količin podatkov.</li>
+							<li>Ureja zapis in branje podatkov.</li>
+							<li>Izvaja wear leveling in TRIM.</li>
+							<li>Popravlja napake (ECC).</li>
 						</ul>
-					</section>
-				</section>
-				<section>
-					<h2>Različne tehnologije SSD</h2>
-					<section>
-						<h3>Zakaj jih je več?</h3>
-						<ul>
-							<li>idk</li>
-						</ul>
+						<p>[img notranjost SSD + krmilnik]</p>
 					</section>
 				</section>
 
@@ -110,26 +101,27 @@
 					<section>
 						<h3>SATA SSD</h3>
 						<ul>
-							<li>Uporablja enak priključek kot klasični HDD.</li>
-							<li>Omejen na hitrosti do ~600 MB/s.</li>
-							<li>Poceni in dobra izbira za nadgradnjo starejših računalnikov.</li>
+							<li>Povezava prek SATA.</li>
+							<li>Hitrost do 600 MB/s.</li>
+							<li>Poceni, dobro za stare PC-je.</li>
 						</ul>
 					</section>
 					<section>
 						<h3>NVMe SSD</h3>
 						<ul>
-							<li>Priklop prek PCIe vodila, kar omogoča večjo hitrost.</li>
-							<li>Hitrosti več GB/s, veliko hitrejši od SATA SSD.</li>
-							<li>Najboljša izbira za gaming in profesionalno delo.</li>
+							<li>Povezava prek PCIe.</li>
+							<li>Hitrost več GB/s.</li>
+							<li>Top izbira za gaming in profi delo.</li>
 						</ul>
 					</section>
 					<section>
 						<h3>Zunanji SSD</h3>
 						<ul>
-							<li>Povezuje se prek USB-C ali Thunderbolt.</li>
-							<li>Uporablja se za prenos podatkov ali kot dodatna shramba.</li>
-							<li>Hitrost je odvisna od priključka (USB 3.0, 3.1, 3.2, Thunderbolt).</li>
+							<li>Povezava prek USB-C ali Thunderbolt.</li>
+							<li>Uporaben za backup in prenos datotek.</li>
+							<li>Hitrost odvisna od vmesnika.</li>
 						</ul>
+						<p>[img priključki SATA vs NVMe]</p>
 					</section>
 				</section>
 
@@ -138,20 +130,49 @@
 					<section>
 						<h3>Kako dolgo zdrži SSD?</h3>
 						<ul>
-							<li>Življenjska doba je odvisna od vrste celic (SLC, MLC, TLC, QLC).</li>
-							<li>Več zapisov pomeni hitrejšo obrabo celic.</li>
-							<li>Moderne SSD-ji imajo algoritme za podaljšanje življenjske dobe (wear leveling, TRIM).</li>
+							<li>Živ. doba je omejena s številom zapisov.</li>
+							<li>SLC zdrži najdlje, QLC najkrajše.</li>
+							<li>Wear leveling razporeja zapise za daljšo dobo.</li>
 						</ul>
 					</section>
 					<section>
-						<h3>Kako podaljšati življenjsko dobo?</h3>
+						<h3>Nasveti za daljšo živ. dobo</h3>
 						<ul>
-							<li>Ne polni diska do konca – pusti vsaj 10-20% prostora prostega.</li>
-							<li>Ne defragmentiraj SSD – ni potrebe, samo pospeši obrabo.</li>
-							<li>Uporabi TRIM ukaz, da sistem optimalno upravlja podatke.</li>
+							<li>Pusti vsaj 10-20% diska praznega.</li>
+							<li>Ne defragmentiraj SSD.</li>
+							<li>Omogoči TRIM.</li>
 						</ul>
+						<p>[img wear leveling diagram]</p>
+						<p>[video zakaj defragmentacija SSD je neumna ideja]</p>
 					</section>
 				</section>
+
+				<section>
+					<h2>Zakaj SSD je boljši?</h2>
+					<section>
+						<h3>Glavne prednosti</h3>
+						<ul>
+							<li>Hitra odzivnost OS in programov.</li>
+							<li>Boljša večopravilnost.</li>
+							<li>Daljša avtonomija prenosnika.</li>
+						</ul>
+						<p>[video primerjava boot time HDD vs SSD]</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Zaključek</h2>
+					<section>
+						<h3>Povzetek</h3>
+						<ul>
+							<li>SSD so nujni za moderen sistem.</li>
+							<li>HDD samo še za arhiviranje.</li>
+							<li>Prihodnost = 3D NAND in še več kapacitete.</li>
+						</ul>
+						<p>[img 3D NAND sloji]</p>
+					</section>
+				</section>
+
 
 
 			</div>
