@@ -26,8 +26,8 @@
 			allow="autoplay; encrypted-media">
 		</iframe>
 		<iframe 
-		    src="https://www.youtube.com/embed/YXexSXix3zs?si=BZhLtqeX4yx7nj-k&autoplay=1&mute=1&controls=0" 
-			style="position: fixed; top: 10px; right: 10px; z-index: 999; border-radius: 10px; opacity: 5%; width: 36vmax; height: 20vmax;"
+		    src="https://www.youtube.com/embed/p5X8Z-jvsHI?si=97yQ5Axu3i5ERvE4&autoplay=1&mute=1&controls=0" 
+			style="position: fixed; top: 10px; right: 10px; z-index: 999; border-radius: 10px; opacity: 9%; width: 36vmax; height: 20vmax;"
 			allow="autoplay; encrypted-media">
 		</iframe>
 
@@ -54,7 +54,9 @@
 							<li>Tišje delovanje.</li>
 							<li>Manjša poraba energije.</li>
 						</ul>
-						<p>[img primerjava SSD vs HDD]</p>
+					</section>
+					<section>
+						<img src="https://i0.wp.com/electricalfundablog.com/wp-content/uploads/2020/01/SSD-Vs-HDD-3.jpg" alt="idk">
 					</section>
 				</section>
 
@@ -73,11 +75,11 @@
 						<ul>
 							<li>SLC: 1 bit/celico (hitro, dolgo zdrži).</li>
 							<li>MLC: 2 bita/celico (srednja hitrost).</li>
-							<li>TLC: 3 bita/celico (poceni, krajša živ. doba).</li>
-							<li>QLC: 4 bita/celico (velika kapaciteta, najcenejši).</li>
+							<li>TLC: 3 biti/celico (poceni, krajša živ. doba).</li>
+							<li>QLC: 4 biti/celico (velika kapaciteta, najcenejši).</li>
 						</ul>
-						<p>[img flash celica struktura]</p>
 					</section>
+					<section><img src="https://www.storagenewsletter.com/wp-content/uploads/2016/08/toshiba-nand-f1.jpg" alt="kasjhdkjhls"></section>
 					<section>
 						<h3>Shranjevanje in branje</h3>
 						<ul>
@@ -92,9 +94,60 @@
 							<li>Izvaja wear leveling in TRIM.</li>
 							<li>Popravlja napake (ECC).</li>
 						</ul>
-						<p>[img notranjost SSD + krmilnik]</p>
 					</section>
+					<section><img src="https://hardwaresecrets.com/wp-content/uploads/2022/05/Inside-an-SSD-unit.jpg" alt="ssd"></section>
 				</section>
+				<section>
+					<h2>NAND vs NOR flash</h2>
+					<section>
+						<h3>Kaj je fora?</h3>
+						<ul>
+							<li>NAND in NOR sta dve vrsti flash pomnilnika.</li>
+							<li>SSD-ji uporabljajo skoraj izključno <b>NAND</b>, ker je cenejši in hitrejši za velike podatke.</li>
+							<li>NOR se uporablja bolj za <b>firmware</b> in mikrokontrolerje – hitrejši za branje posameznih bajtov.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Kako se razlikujeta znotraj?</h3>
+						<ul style="font-size: 0.7em;">
+							<li>NAND shrani podatke v <b>seriji celic</b>, povezanih kot veriga. Branje/pisanje gre čez več celic hkrati.</li>
+							<li>NOR shrani podatke v <b>neodvisne celice</b>, vsaka celica ima svojo direktno povezavo – zato je NOR hitrejši za <b>random access</b>.</li>
+							<li>NAND je optimiziran za <b>veliko količino podatkov</b>, NOR za hiter dostop do <b>posameznih bajtov</b>.</li>
+							<li>NAND ima manjšo velikost celic in zato večjo gostoto podatkov – cenejši za velike kapacitete.</li>
+							<li>NOR porabi več prostora in energije na bit, zato je dražji in manj pogost v velikih diskih.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Primerjava</h3>
+						<table style="font-size: 0.7em;">
+							<tr>
+								<th>Lastnost</th>
+								<th>NAND</th>
+								<th>NOR</th>
+							</tr>
+							<tr>
+								<td>Hitrost branja</td>
+								<td>Hitro pri zaporednem branju</td>
+								<td>Hitro pri naključnem branju</td>
+							</tr>
+							<tr>
+								<td>Hitrost pisanja</td>
+								<td>Hitrejše za velike bloke</td>
+								<td>Počasno za velike bloke</td>
+							</tr>
+							<tr>
+								<td>Cena</td>
+								<td>Poceni</td>
+								<td>Dražje</td>
+							</tr>
+							<tr>
+								<td>Uporaba</td>
+								<td>SSD, pomnilniške kartice, USB ključki</td>
+								<td>Firmware, embedded sistemi</td>
+							</tr>
+						</table>
+					</section>
+				</section>				
 
 				<section>
 					<h2>Vrste SSD diskov</h2>
@@ -121,8 +174,8 @@
 							<li>Uporaben za backup in prenos datotek.</li>
 							<li>Hitrost odvisna od vmesnika.</li>
 						</ul>
-						<p>[img priključki SATA vs NVMe]</p>
 					</section>
+					<section><img src="https://static.giga.de/wp-content/uploads/2021/01/m2-ssds-sata-nvme-unterschied-rcm992x637.jpg" alt=""></section>
 				</section>
 
 				<section>
@@ -142,9 +195,8 @@
 							<li>Ne defragmentiraj SSD.</li>
 							<li>Omogoči TRIM.</li>
 						</ul>
-						<p>[img wear leveling diagram]</p>
-						<p>[video zakaj defragmentacija SSD je neumna ideja]</p>
 					</section>
+					<section><img src="https://www.jib.co.th/img_master/uploads/NYX/2021/062021/05/US70_5.jpg" alt=""></section>
 				</section>
 
 				<section>
@@ -156,7 +208,6 @@
 							<li>Boljša večopravilnost.</li>
 							<li>Daljša avtonomija prenosnika.</li>
 						</ul>
-						<p>[video primerjava boot time HDD vs SSD]</p>
 					</section>
 				</section>
 
@@ -169,8 +220,21 @@
 							<li>HDD samo še za arhiviranje.</li>
 							<li>Prihodnost = 3D NAND in še več kapacitete.</li>
 						</ul>
-						<p>[img 3D NAND sloji]</p>
 					</section>
+					<section><img src="https://sg.micron.com/content/dam/micron/connectedassets/micron/global/imported-images/in-line-images/products/nand-flash/gcm-1019003-infographic-232l-nand-1500x890px-v2.jpg" alt=""></section>
+				</section>
+				<section>
+					<h2>Video</h2>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/E7Up7VuFd8A?si=_EvFEIbCJZvCf6AV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</section>
+				<section>
+					<img src="https://cdn.vectorstock.com/i/500p/11/63/thumbs-up-emoticon-vector-9701163.jpg" alt="emoji" style="height: 15vh; position: relative; top: -10vh; left: -15vh;"> 
+					<img src="https://ih1.redbubble.net/image.3470421799.8814/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="emoji" style="height: 15vh; position: relative; top: -5vh; left: -15vh;"> 
+					<img src="https://pbs.twimg.com/profile_images/1483552953357287428/L1EpXmpC_400x400.jpg" alt="emoji" style="height: 30vh; position: relative; top: -5vh; left: 5vh;">
+					<br>
+					<img src="https://www.meme-arsenal.com/memes/988f4163c4fd74573cdc8c83202ac664.jpg" alt="" style="height: 30vh; position: relative; top: 5vh; left: 5vh;">
+					<img src="https://pm1.aminoapps.com/7652/680a954a62756965b268921b021cd2813db263a8r1-613-500v2_hq.jpg" alt="" style="height: 30vh; position: relative; top: 0vh; left: 5vh;">
+					<figcaption style="font-size: 0.4em; left: 20vh; top: -4vh; position: relative;">(Markov sugestion)</figcaption>
 				</section>
 
 

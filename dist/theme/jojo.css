@@ -424,4 +424,11 @@
   
   /* Add Part 7 vibes font globally if needed */
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;700&display=swap');
+
+  .reveal img {
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em #ffffff, 0 0 1em #ffaaaadd;
+    height: 50vh;
+    width: auto;
+  }
   
